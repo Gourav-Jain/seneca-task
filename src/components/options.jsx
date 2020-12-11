@@ -10,7 +10,7 @@ export const Options = ({
 }) => {
   return options.map((op, ok) => (
     <div key={ok} className="group-option">
-      <div className="optoins">
+      <div className="options">
         <input
           type="radio"
           name={`q${questionId}op${ok}`}
@@ -21,8 +21,6 @@ export const Options = ({
           defaultChecked={defaultOptions && defaultOptions.includes(op[0])}
         />
         <label htmlFor={`n1q${questionId}op${ok}`}>{op[0]} </label>
-      </div>
-      <div className="optoins">
         <input
           type="radio"
           name={`q${questionId}op${ok}`}
